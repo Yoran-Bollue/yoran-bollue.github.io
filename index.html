@@ -10,7 +10,9 @@
 
 <body>
     <script src="js/desktop.js"></script>
-    <!-- <script src="js/notepad.js"></script> -->
+    <script src="js/notepad.js"></script>
+    <script src="js/inbox.js"></script>
+    <script src="js/settings.js"></script>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/shared.css">
     <style>
@@ -831,12 +833,12 @@
                 </inbox-element>
                 <notepad-element>
                     <style>
-                        .window {
-                            min-width: 240px !important;
+                        notepad-element .window {
+                            min-width: 260px !important;
                             min-height: 240px !important;
                         }
 
-                        .window-content {
+                        notepad-element .window-content {
                             height: 100%;
                             width: 100%;
                             box-sizing: border-box;
@@ -912,6 +914,41 @@
                         </div>
                     </div>
                 </notepad-element>
+                <settings-element>
+                    <div class="window outer-border" style="min-width: 200px; width: 200px;">
+                        <div class="inner-border" style="height: 100%; box-sizing: border-box;">
+                            <div class="window-title-bar">
+                                <div class="logo-title">
+                                    <div class="window-logo"
+                                        style="background-image: url('../../assets/settings/logo.png')"></div>
+                                    <div class="window-title">Settings</div>
+                                </div>
+                                <div class="window-controls">
+                                    <div class="outer-border outer-border-button">
+                                        <div class="window-control inner-border inner-border-button">
+                                        </div>
+                                    </div>
+
+                                    <div class="outer-border outer-border-button close-button">
+                                        <div class="window-control inner-border inner-border-button"
+                                            style="font-size: 14px;"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="window-content scrollbox">
+                                <!-- place content here -->
+
+                            </div>
+                            <div class="window-footer" style="height: 12px;">
+                                <div class="status-bar">
+                                    <div class="status-bar-section"></div>
+                                </div>
+                                <div class="resize-handle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </settings-element>
                 <!-- <blocks_component-X></blocks_component-X>
                 <notepad-X></notepad-X>
                 <notebook-X></notebook-X>

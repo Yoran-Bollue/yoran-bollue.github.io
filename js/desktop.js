@@ -59,7 +59,7 @@ setTimeout(() => {
     const settingsButton = document.querySelector('.settings-button');
     settingsButton.addEventListener('click', () => {
         const desktop = document.querySelector('.desktop');
-        const index = this.programs.findIndex((program) => program.tagname === 'SETTINGS' + TAGS.X);
+        const index = this.programs.findIndex((program) => program.tagname === 'SETTINGS-ELEMENT');
         this.windowVisibility(index, false);
         this.programs[index].isClosed = false;
     });

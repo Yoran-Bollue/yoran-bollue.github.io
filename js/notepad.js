@@ -24,14 +24,11 @@ setTimeout(function () {
             isMaximized = false;
         }
     });
-    //minimize window
-    maxButtons[0].addEventListener('click', () => {
-        this.style.visibility = 'hidden';
-    });
 }, 600);
 
 function handleResizeStart(event) {
     event.preventDefault();
+    console.warn('handleNotepadResizeStart');
     this.resizable = true;
     this.resizeData = {
         offsetX: event.offsetX,
